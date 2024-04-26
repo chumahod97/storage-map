@@ -5,8 +5,10 @@
 	<style>
 		#canvas_id {
 			border: solid;
-			width: 3508px;
-			height: 2480px;
+			/*width: 3508px;
+            height: 2480px;*/
+            width: 29.7cm;
+            height: 21cm;
 		}
 	</style>
 

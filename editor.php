@@ -1,6 +1,5 @@
 <html>
         <head>
-        <?php require("sessionCheck.php"); ?>
         <?php require("editorhead.php"); ?>
         <?php require("mainhead.php"); ?>
         <style>
