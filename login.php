@@ -21,5 +21,5 @@ if(($password == $users[$user]) && isset($users[$user])) {
     $_SESSION['user'] = $user;
     header("Location: editor.php");
     exit();
-} 
+}
 ?>
