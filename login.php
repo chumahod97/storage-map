@@ -11,7 +11,7 @@
 </form>
 
 <?php
-$users = ["sni" => "38440e18f1b0f854a4e187d6267d8dea3809f51f8eca9b3ae6e520dee6962191"];
+$users = ["sni" => "e69554604f977e8826cce1240bb9c5a1bbc1fe667edb4826abefb242bce6a36d"];
 $salt = ["sni" => "Theih6eeuo5feiThxieQuoo5xuu8Eepilee0du1P"];
 
 $user = $_POST['user'];
