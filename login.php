@@ -1,6 +1,6 @@
 <?php
-    ob_start();
-    session_start();
+ob_start();
+session_start();
 ?>
 
 <h2>Login</h2>

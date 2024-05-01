@@ -1,6 +1,6 @@
 <html>
 	<head>
-        <? require("maphead.php"); ?> 
+        <?php require("maphead.php"); ?> 
 		<style>
 			#canvas_id {
 				/* border: solid; */

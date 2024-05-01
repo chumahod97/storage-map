@@ -1,5 +1,5 @@
- <?php 
-$result = rawurldecode($_POST["templates"]); 
+ <?php
+$result = rawurldecode($_POST["templates"]);
 
 $productsFile = fopen("./templates.json", "w");
 fwrite($productsFile, $result);
