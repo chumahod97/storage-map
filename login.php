@@ -11,13 +11,17 @@ session_start();
 </form>
 
 <?php
-$users = ["sni" => "e69554604f977e8826cce1240bb9c5a1bbc1fe667edb4826abefb242bce6a36d"];
-$salt = ["sni" => "Theih6eeuo5feiThxieQuoo5xuu8Eepilee0du1P"];
+$password = file_get_contents('./password.txt');
+
+if ($password === false) {
+    throw new Exception("password.txt is not found");
+}
+
+$users = ["user" => $password];
 
 $user = $_POST['user'];
-$password = hash("sha256", $_POST['password'] . $salt[$user]);
 
-if(($password == $users[$user]) && isset($users[$user])) {
+if (password_verify($_POST['password'], $users[$user]) && isset($users[$user])) {
     $_SESSION['user'] = $user;
     header("Location: editor.php");
     exit();
